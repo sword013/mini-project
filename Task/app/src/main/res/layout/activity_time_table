@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeTable">
+
+    <TextView
+        android:id="@+id/labels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-----     M  Tu   Wed     Th     Fri     Sat   Sun"
+        android:textSize="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/labels"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="700dp">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="40dp"
+                android:layout_height="1440dp"
+                android:text="12am\n\n\n\n1am\n\n\n\n2am\n\n\n\n3am\n\n\n\n4am\n\n\n\n5am\n\n\n\n6am\n\n\n\n7am\n\n\n\n8am\n\n\n\n9am\n\n\n\n10am\n\n\n\n11am\n\n\n\n12pm\n\n\n\n1pm\n\n\n\n2pm\n\n\n\n3pm\n\n\n\n4pm\n\n\n\n5pm\n\n\n\n6pm\n\n\n\n7pm\n\n\n\n8pm\n\n\n\n9pm\n\n\n\n10pm\n\n\n\n11pm"
+                android:textSize="12.38dp" />
+
+            <LinearLayout
+                android:id="@+id/mon"
+                android:layout_width="50dp"
+                android:layout_height="1440dp"
+                android:layout_toRightOf="@id/time"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tue"
+                android:layout_width="50dp"
+                android:layout_height="1440dp"
+                android:layout_toRightOf="@id/mon"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wed"
+                android:layout_width="50dp"
+                android:layout_height="1440dp"
+                android:layout_toRightOf="@id/tue"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/thur"
+                android:layout_width="50dp"
+                android:layout_height="1440dp"
+                android:layout_toRightOf="@id/wed"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fri"
+                android:layout_width="50dp"
+                android:layout_height="1440dp"
+                android:layout_toRightOf="@id/thur"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sat"
+                android:layout_width="50dp"
+                android:layout_height="1440dp"
+                android:layout_toRightOf="@id/fri"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sun"
+                android:layout_width="50dp"
+                android:layout_height="1440dp"
+                android:layout_toRightOf="@id/sat"
+                android:orientation="vertical"></LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>
