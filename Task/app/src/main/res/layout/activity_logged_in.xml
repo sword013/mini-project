@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoggedIn">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <Button
+        android:layout_margin="20dp"
+        android:id="@+id/allotfix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="gotoSelectDay"
+        android:text="Allot/Delete Fixed Tasks"
+        android:background="#FA8A56"
+        android:textColor="#ffff"
+        android:fontFamily="casual"
+        android:textSize="30dp"/>
+
+    <Button
+        android:layout_margin="20dp"
+        android:id="@+id/allotvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Allot/DELETE Variable Tasks"
+        android:layout_below="@+id/allotfix"
+        android:background="#FA8A56"
+        android:textColor="#ffff"
+        android:fontFamily="casual"
+        android:textSize="30dp"/>
+
+    <Button
+
+        android:layout_margin="20dp"
+        android:id="@+id/fixed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/allotvar"
+        android:onClick="showFixed"
+        android:text="Show Fixed Tasks"
+        android:background="#5DA3C1"
+        android:textColor="#ffff"
+        android:fontFamily="casual"
+        android:textSize="30dp"/>
+
+    <Button
+        android:layout_margin="20dp"
+        android:id="@+id/var"
+        android:layout_below="@+id/fixed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Variable Tasks
+(Priority wise)"
+        android:background="#97C099"
+        android:textColor="#ffff"
+        android:fontFamily="casual"
+        android:textSize="30dp"/>
+
+    <Button
+        android:layout_margin="20dp"
+        android:id="@+id/tt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/var"
+        android:onClick="showtt"
+        android:text="Show TimeTable"
+        android:background="#97C099"
+        android:textColor="#ffff"
+        android:fontFamily="casual"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+    </RelativeLayout>
+</ScrollView>
+
+
+</RelativeLayout>
